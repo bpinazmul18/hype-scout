@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $primary-font-size;
+  text-rendering: optimizeLegibility;
+}
+
+ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  margin:0;
+  padding:0;
+}
+
+ol {
+  margin:0;
+  padding:0;
+}
+
+p {
+  padding:0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding:0;
+  margin: 0;
+  font-weight: normal;
+}
+
+fieldset {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+button {
+  cursor:pointer;
+}
