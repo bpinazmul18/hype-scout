@@ -13,6 +13,10 @@ const App: React.FC = () => {
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/dashboard' element={<h1>Dashboard</h1>}/>
+        <Route path='/campaign' element={<h1>Campaign</h1>}/>
+        <Route path='/hypesocial' element={<h1>Hypesocial</h1>}/>
+        <Route path='/insights' element={<h1>Insights</h1>}/>
 
         <Route path='not-found' element={<p>NOT FOUND</p>}/>
         <Route path='*' element={<Navigate to="/not-found" replace/>}/>

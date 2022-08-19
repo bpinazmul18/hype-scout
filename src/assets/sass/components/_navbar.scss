@@ -1,0 +1,24 @@
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $tertiary-clr;
+            border-radius: .4rem;
+            transition: all 0.3s ease;
+
+            &.active {
+                font-weight: 700;
+                color: $white;
+                background-color: $dark;
+            }
+        }
+    }
+}
+

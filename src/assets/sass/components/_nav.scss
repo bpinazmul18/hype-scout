@@ -1,0 +1,20 @@
+nav {
+    &.navbar {
+        padding: 2rem 0;
+
+        &.navbar-dark {
+            background-color: $secondary-clr;
+        }
+
+        .navbar-brand {
+            padding: 0;
+            margin: 0;
+
+            img {
+                @media only screen and (max-width: 575px) {
+                    width: 13rem;
+                }
+            }
+        }
+    }
+}

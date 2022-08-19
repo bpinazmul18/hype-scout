@@ -1,0 +1,15 @@
+.offcanvas-backdrop {
+    top: 8rem;
+}
+
+.navbar-offset {
+    background-color: $secondary-clr;
+    padding: 1.6rem;
+
+    &.offcanvas {
+        &.offcanvas-end {
+            top: 8rem;
+            width: 34rem;
+        }
+    }
+}
