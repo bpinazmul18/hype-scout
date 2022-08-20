@@ -4,7 +4,11 @@ class Dashboard extends Component {
 
     render () {
         return (
-            <div>Dashboard</div>
+            <div className="text-light">
+                <div>Search panel</div>
+                <div>Profiles</div>
+                <div>Pagination</div>
+            </div>
         )
     }
 }
