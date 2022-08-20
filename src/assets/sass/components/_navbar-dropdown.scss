@@ -41,6 +41,55 @@
                         }
                     }
                 }
+
+                .dropdown-menu {
+                    
+
+                    &[data-bs-popper] {
+                        position: absolute;
+                        width: 17.4rem;
+                        top: calc(100% + 27px);
+                        left: auto!important;
+                        right: 0;
+                        background-color: $secondary-clr;
+                        border-color: $secondary-clr;
+                        border-radius: .8rem;
+                        padding: 1rem;
+                    }
+
+                    .dropdown-item {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 1.7rem;
+                        padding: .8rem 1.6rem;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        color: $tertiary-clr;
+                        border-radius: .4rem;
+                        transition: all 0.3s ease;
+
+
+                        &:hover {
+                            background-color: $primary-clr;
+
+                            svg {
+                                fill: $chetwode-blue;
+                            }
+
+                            .dropdown-item-text {
+                                color: $chetwode-blue;
+                            }
+                        }
+
+                        .dropdown-item-text {
+                            color: $tertiary-clr;
+                            padding: 0rem;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
             }
         }
     }
