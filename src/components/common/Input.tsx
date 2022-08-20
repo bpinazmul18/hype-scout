@@ -1,13 +1,24 @@
-import { InputProps } from '../../models/Input';
+import React from 'react'
 
-const Input = ({ name, label, error, ...rest}: InputProps) => {
+interface InputProps {
+    label: string,
+    type: string,
+    name: string,
+    value?: string,
+    error?: string,
+    onChange: () => void,
+}
+
+const Input = ({ label, type, name, value, error, onChange }: InputProps) => {
 
     return ( 
         <div className="mb-3">
             <label htmlFor={name} className="form-label text-light">{label}</label>
             <input
-                {...rest}
+                type={type}
                 name={name}
+                value={value}
+                onChange={onChange}
                 id={name} 
                 className="form-control rounded-pill" 
                 placeholder={`Enter ${name}...`}

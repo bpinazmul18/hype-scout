@@ -1,0 +1,8 @@
+.btn {
+  &.btn {
+    &-primary {
+      background-color: $blue-violet;
+      border-color: $blue-violet;
+    }
+  }
+}
