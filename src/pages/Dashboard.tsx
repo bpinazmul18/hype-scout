@@ -30,7 +30,7 @@ class Dashboard extends Form {
 
     render () {
         return (
-            <div className="text-light">
+            <div className="text-light d-none">
                 <div className="search-panel">
                     <div className="profile-count">
                         Profile {this.state.profiles.length}
