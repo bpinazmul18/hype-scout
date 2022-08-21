@@ -1,0 +1,61 @@
+footer {
+    padding-top: 7rem;
+    padding-bottom: 3.4rem;
+
+    .footer-col {
+        img {
+            padding-bottom: 2rem;
+        }
+
+        .company-description {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $tertiary-clr;
+            margin-bottom: 3rem;
+        }
+
+        .company-social-media {
+            .nav {
+                .nav-item {
+                    &:first-child {
+                        .nav-link {
+                            padding-left: 0;
+                        }
+                    }
+                    .nav-link {
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            padding-top: 5.8rem;
+            padding-bottom: .8rem;
+            margin-bottom: 0;
+        }
+
+        .navbar-nav {
+            &.category-nav {
+                .nav-item {
+                    .nav-link {
+                        padding-top: .8rem;
+                        padding-bottom: .8rem;
+                    }
+                }
+            }
+        }
+        
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $tertiary-clr;
+        }
+    }
+}

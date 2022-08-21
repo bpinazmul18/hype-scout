@@ -2,21 +2,22 @@ import React from 'react'
 import { Col, Container, Nav, Row } from 'react-bootstrap'
 import logo from '../assets/img/hype-scout.png'
 import SocialItem from './common/SocialItem';
+import NavItem from './common/NavItem';
 
 const Footer: React.FC = () => {
     return (
         <footer>
             <Container>
                 <Row>
-                    <Col>
-                        <div className="footer-col">
+                    <Col md="3">
+                        <div className="footer-col text-center text-md-start">
                             <img src={logo} alt="HypeScout" />
                             <div className="company-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum sed ultricies volutpat rhoncus faucibus sit. 
                             </div>
 
                             <div className="company-social-media">
-                                <Nav>
+                                <Nav className="justify-content-center justify-content-md-start">
                                     <SocialItem to="https://facebook.com/hypescout">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.6688 0.5H1.33125C1.11129 0.501635 0.900811 0.589738 0.745275 0.745275C0.589738 0.900811 0.501635 1.11129 0.5 1.33125V14.6688C0.501635 14.8887 0.589738 15.0992 0.745275 15.2547C0.900811 15.4103 1.11129 15.4984 1.33125 15.5H8.5125V9.7H6.5625V7.43125H8.5125V5.7625C8.5125 3.825 9.69375 2.76875 11.4312 2.76875C12.0125 2.76875 12.5938 2.76875 13.175 2.85625V4.875H11.9813C11.0375 4.875 10.8562 5.325 10.8562 5.98125V7.425H13.1063L12.8125 9.69375H10.8562V15.5H14.6688C14.8887 15.4984 15.0992 15.4103 15.2547 15.2547C15.4103 15.0992 15.4984 14.8887 15.5 14.6688V1.33125C15.4984 1.11129 15.4103 0.900811 15.2547 0.745275C15.0992 0.589738 14.8887 0.501635 14.6688 0.5V0.5Z" fill="#637381"/>
@@ -46,21 +47,56 @@ const Footer: React.FC = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col>
+                    <Col xs="6" md="3">
                         <div className="footer-col">
+
+                            <h4 className="px-3 text-light">Company</h4>
+
+                            <Nav className="navbar-nav category-nav" as="ul">
+                                <NavItem to="about-us" linkName="About Us"/>
+                                <NavItem to="careers" linkName="Careers"/>
+                                <NavItem to="case-study" linkName="Case Study"/>
+                                <NavItem to="blog" linkName="Blog"/>
+                                <NavItem to="contact-us" linkName="Contact Us"/>
+                            </Nav>
                             
                         </div>
                     </Col>
-                    <Col>
+                    <Col xs="6" md="3">
                         <div className="footer-col">
-                            
+                            <h4 className="px-3 text-light">Influencer</h4>
+
+                            <Nav className="navbar-nav category-nav" as="ul">
+                                <NavItem to="join-as-influencer" linkName="Join as Influencer"/>
+                                <NavItem to="hype-social" linkName="HypeSocial"/>
+                            </Nav>
                         </div>
                     </Col>
-                    <Col>
+                    <Col md="3">
                         <div className="footer-col">
-                            
+                            <h4 className="px-3 text-light">Advertiser</h4>
+
+                            <Nav className="navbar-nav category-nav" as="ul">
+                                <NavItem to="join-as-advertiser" linkName="Join as Advertiser"/>
+                                <NavItem to="hype-link" linkName="Hypelink"/>
+                            </Nav>
                         </div>
                     </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <div className="footer-col d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
+                        <div className="footer-copy-right-text">
+                            <p>© Hypescout 2022. All rights reserved</p>
+                        </div>
+
+                        <Nav className="navbar-nav flex-row" as="ul">
+                            <NavItem to="terms-conditions" linkName="Terms & Conditions"/>
+                            <NavItem to="privacy" linkName="Privacy"/>
+                            <NavItem to="sitemap" linkName="Sitemap"/>
+                        </Nav>
+                    </div>
                 </Row>
             </Container>
         </footer>
