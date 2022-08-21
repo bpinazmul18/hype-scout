@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                     <Col xs="6" md="3">
                         <div className="footer-col">
 
-                            <h4 className="px-3 text-light">Company</h4>
+                            <h4 className="px-4 text-light">Company</h4>
 
                             <Nav className="navbar-nav category-nav" as="ul">
                                 <NavItem to="about-us" linkName="About Us"/>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                     </Col>
                     <Col xs="6" md="3">
                         <div className="footer-col">
-                            <h4 className="px-3 text-light">Influencer</h4>
+                            <h4 className="px-4 text-light">Influencer</h4>
 
                             <Nav className="navbar-nav category-nav" as="ul">
                                 <NavItem to="join-as-influencer" linkName="Join as Influencer"/>
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
                     </Col>
                     <Col md="3">
                         <div className="footer-col">
-                            <h4 className="px-3 text-light">Advertiser</h4>
+                            <h4 className="px-4 text-light">Advertiser</h4>
 
                             <Nav className="navbar-nav category-nav" as="ul">
                                 <NavItem to="join-as-advertiser" linkName="Join as Advertiser"/>
