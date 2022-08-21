@@ -1,13 +1,14 @@
 import React from 'react';
 
 interface SearchBoxProps {
-    value: 'string',
-    onChange: () => void
+    value: string,
+    onChange: (value: string) => void
 }
 
-const SearchBox: React.FC<SearchBoxProps> = ({ value, onChange}) => {
+const SearchBox = ({ value, onChange}: SearchBoxProps) => {
+    
     return (
-        <input type="text" name="query" value={value} onChange={(e: React.FormEvent) => onChange(e.currentTarget.value)} className="form-control my-3" placeholder='Search...' />
+        <input type="text" name="query" value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>) => onChange(event.currentTarget.value)} className="form-control my-3" placeholder='Search...' />
     );
 }
 

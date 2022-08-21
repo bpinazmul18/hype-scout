@@ -1,11 +1,27 @@
 import React from 'react'
-import Form from "../components/common/Form";
-import { fetchProfiles } from "../services/profiles";
-import {Button} from "react-bootstrap";
-import SearchBox from "../components/common/SearchBox";
+import {Button, Container} from 'react-bootstrap';
 
+import Form from '../components/common/Form'
+import SearchBox from '../components/common/SearchBox';
+import { fetchProfiles } from '../services/profiles';
+
+interface Data {
+    influencersIndustry: string,
+    influencersCountry: string,
+    audiencesCountry: string,
+    influencersSocialMediaPlatform: string,
+    influencersFollowers: string,
+    influencersGender: string
+}
+
+interface DashboardState {
+    data: Data,
+    profiles: string[],
+    errors: string,
+    searchQuery: string
+}
 class Dashboard extends Form {
-    state = {
+    state: DashboardState = {
         data: {
             influencersIndustry: '',
             influencersCountry: '',
@@ -15,7 +31,7 @@ class Dashboard extends Form {
             influencersGender: ''
         },
         profiles: [],
-        errors: {},
+        errors: '',
         searchQuery: ''
     }
 
@@ -36,13 +52,14 @@ class Dashboard extends Form {
 
     render () {
         return (
-            <div className="text-light d-none">
-                <div className="search-panel">
+            <Container>
+                <div className="text-light">
+                <div className="search-panel d-flex align-items-center">
                     <div className="profile-count">
                         Profile {this.state.profiles.length}
                     </div>
 
-                    <div className="profile-search">
+                    <div className="profile-search flex-grow-1">
                         <SearchBox value={this.state.searchQuery} onChange={this.handleSearch}/>
                     </div>
 
@@ -58,6 +75,7 @@ class Dashboard extends Form {
                 <div>Profiles</div>
                 <div>Pagination</div>
             </div>
+            </Container>
         )
     }
 }
