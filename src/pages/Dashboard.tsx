@@ -2,6 +2,7 @@ import React from 'react'
 import Form from "../components/common/Form";
 import { fetchProfiles } from "../services/profiles";
 import {Button} from "react-bootstrap";
+import SearchBox from "../components/common/SearchBox";
 
 class Dashboard extends Form {
     state = {
@@ -14,7 +15,8 @@ class Dashboard extends Form {
             influencersGender: ''
         },
         profiles: [],
-        errors: {}
+        errors: {},
+        searchQuery: ''
     }
 
     async componentDidMount () {
@@ -27,6 +29,10 @@ class Dashboard extends Form {
         // calling the api
     }
 
+    handleSearch = (query: string) => {
+        this.setState({ searchQuery: query })
+    }
+
 
     render () {
         return (
@@ -37,7 +43,7 @@ class Dashboard extends Form {
                     </div>
 
                     <div className="profile-search">
-
+                        <SearchBox value={this.state.searchQuery} onChange={this.handleSearch}/>
                     </div>
 
                     <div className="advanced-filter">
