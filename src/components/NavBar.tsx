@@ -9,7 +9,7 @@ import logo from '../assets/img/hype-scout.png'
 
 const NavBar: React.FC = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Navbar className="mb-5" collapseOnSelect expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand to="/" as={Link}>
                     <img className="img-fluid" src={logo} alt="HypeScout"/>

@@ -1,0 +1,18 @@
+.form-control {
+    padding: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $tertiary-clr;
+    background-color: $dark;
+    opacity: 0.7;
+    border-color: $tuna;
+    border-radius: .4rem;
+
+    &:focus {
+        color: $tertiary-clr;
+        background-color: $dark;
+        border-color: $tuna;
+    }
+}
