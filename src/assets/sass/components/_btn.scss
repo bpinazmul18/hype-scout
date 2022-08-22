@@ -1,8 +1,41 @@
 .btn {
-  &.btn {
-    &-primary {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  color: $white;
+  margin-bottom: 0; // For input.btn
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+
+  &-lg {
+    padding: 1.35rem;
+  }
+
+  &-primary {
+    background-color: $blue-violet;
+    border-color: $blue-violet;
+
+    &:hover, &:active, &:focus {
       background-color: $blue-violet;
       border-color: $blue-violet;
     }
+  }
+
+  //&.btn {
+  //  &-primary {
+  //    background-color: $blue-violet;
+  //    border-color: $blue-violet;
+  //  }
+  //}
+
+  svg {
+    width: 1.8rem;
+    height: 2rem;
   }
 }

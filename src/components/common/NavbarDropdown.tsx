@@ -73,7 +73,7 @@ const NavbarDropdown = () => {
                 <Dropdown>
                     <Dropdown.Toggle className='border-0 profile-nav' variant="transparent">
                         <div className="profile">
-                            <div className="profile-text">
+                            <div className="profile-text d-none d-md-block">
                                 <span className='greetings'>Hi</span>, Nazmul
                             </div>
                             <div className="avatar">

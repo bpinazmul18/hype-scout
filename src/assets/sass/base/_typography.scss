@@ -14,6 +14,7 @@ body {
   font-size: $primary-font-size;
   text-rendering: optimizeLegibility;
   background-color: $primary-clr;
+  padding: 0 !important;
 }
 
 ul {

@@ -8,7 +8,9 @@ interface SearchBoxProps {
 const SearchBox = ({ value, onChange}: SearchBoxProps) => {
     
     return (
-        <input type="text" name="query" value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>) => onChange(event.currentTarget.value)} className="form-control search-icon" placeholder='Search Profile...' />
+        <div className="profile-search-wrapper">
+            <input type="text" name="query" value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>) => onChange(event.currentTarget.value)} className="form-control search-icon" placeholder='Search Profile...' />
+        </div>
     );
 }
 
