@@ -115,7 +115,6 @@ class Dashboard extends Form {
                                                                     const {pid, socialLink, icon} = social
                                                                     return (
                                                                         <SocialItem key={pid} to={socialLink}>
-                                                                            {icon}
                                                                         </SocialItem>
                                                                     )
                                                                 })
