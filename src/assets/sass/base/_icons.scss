@@ -1,0 +1,90 @@
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ae3ztx');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ae3ztx#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ae3ztx') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ae3ztx') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ae3ztx##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="iconm-"], [class*=" iconm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconm-clock {
+  &:before {
+    content: $iconm-clock; 
+  }
+}
+.iconm-fb {
+  &:before {
+    content: $iconm-fb;     
+    color: #637381;
+  }
+}
+.iconm-filter {
+  &:before {
+    content: $iconm-filter; 
+  }
+}
+.iconm-instagram {
+  &:before {
+    content: $iconm-instagram;     
+    color: #637381;
+  }
+}
+.iconm-linkedin {
+  &:before {
+    content: $iconm-linkedin;     
+    color: #637381;
+  }
+}
+.iconm-location {
+  &:before {
+    content: $iconm-location; 
+  }
+}
+.iconm-monitor {
+  &:before {
+    content: $iconm-monitor;     
+    color: #637381;
+  }
+}
+.iconm-moon {
+  &:before {
+    content: $iconm-moon;     
+    color: #637381;
+  }
+}
+.iconm-notification {
+  &:before {
+    content: $iconm-notification; 
+  }
+}
+.iconm-sun {
+  &:before {
+    content: $iconm-sun;     
+    color: #637381;
+  }
+}
+.iconm-twitter {
+  &:before {
+    content: $iconm-twitter;     
+    color: #637381;
+  }
+}
+
