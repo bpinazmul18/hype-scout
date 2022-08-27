@@ -1,16 +1,16 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ae3ztx');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ae3ztx#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ae3ztx') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ae3ztx') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ae3ztx##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gpby6k');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gpby6k#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gpby6k') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gpby6k') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gpby6k##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="iconm-"], [class*=" iconm-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: never;
@@ -25,65 +25,65 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.iconm-clock {
+.icon-clock {
   &:before {
-    content: $iconm-clock; 
+    content: $icon-clock;
   }
 }
-.iconm-fb {
+.icon-fb {
   &:before {
-    content: $iconm-fb;     
+    content: $icon-fb;
     color: #637381;
   }
 }
-.iconm-filter {
+.icon-filter {
   &:before {
-    content: $iconm-filter; 
+    content: $icon-filter;
   }
 }
-.iconm-instagram {
+.icon-instagram {
   &:before {
-    content: $iconm-instagram;     
+    content: $icon-instagram;
     color: #637381;
   }
 }
-.iconm-linkedin {
+.icon-linkedin {
   &:before {
-    content: $iconm-linkedin;     
+    content: $icon-linkedin;
     color: #637381;
   }
 }
-.iconm-location {
+.icon-location {
   &:before {
-    content: $iconm-location; 
+    content: $icon-location;
   }
 }
-.iconm-monitor {
+.icon-monitor {
   &:before {
-    content: $iconm-monitor;     
+    content: $icon-monitor;
     color: #637381;
   }
 }
-.iconm-moon {
+.icon-moon {
   &:before {
-    content: $iconm-moon;     
+    content: $icon-moon;
     color: #637381;
   }
 }
-.iconm-notification {
+.icon-notification {
   &:before {
-    content: $iconm-notification; 
+    content: $icon-notification;
   }
 }
-.iconm-sun {
+.icon-sun {
   &:before {
-    content: $iconm-sun;     
+    content: $icon-sun;
     color: #637381;
   }
 }
-.iconm-twitter {
+.icon-twitter {
   &:before {
-    content: $iconm-twitter;     
+    content: $icon-twitter;
     color: #637381;
   }
 }
