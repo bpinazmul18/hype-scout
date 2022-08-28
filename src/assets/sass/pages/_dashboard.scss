@@ -10,7 +10,52 @@
 
     .profiles-section {
         .section-inner {
+            .profile-item {
+                background-color: $secondary-clr;
+                border-radius: .8rem;
+                padding: 5rem;
+                transition: .3s ease all;
+                border: .1rem solid transparent;
 
+                &:hover {
+                    box-shadow: 0 0 7.2rem 0 #919EAB3D;
+                    border-color: $tertiary-clr;
+                }
+
+                .profile-item-wrap {
+                    margin-bottom: 2rem;
+
+                    .profile-item-img-wrap {
+                        img {
+                            width: 14rem;
+                            height: 14rem;
+                        }
+                    }
+                }
+                .profile-item-info {
+                    h3 {
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                        line-height: 2.9rem;
+                        letter-spacing: 0;
+                        color: $white;
+                    }
+
+                    i {
+                        font-size: 2rem;
+
+                    }
+
+                    small {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 1.9rem;
+                        letter-spacing: 0;
+                        color: $tertiary-clr;
+
+                    }
+                }
+            }
         }
     }
 }

@@ -5,11 +5,6 @@ import profile4 from './assets/img/profiles/profile-4.png'
 import profile5 from './assets/img/profiles/profile-5.png'
 import profile6 from './assets/img/profiles/profile-6.png'
 
-import facebook from './assets/icons/fb.svg'
-import instagram from './assets/icons/instagram.svg'
-import linkedin from './assets/icons/linkedin.svg'
-import twitter from './assets/icons/twitter.svg'
-
 export const profiles = [
     {
         id: 1,
@@ -21,22 +16,22 @@ export const profiles = [
             {
                 pid: 1,
                 socialLink: "https://facebook.com/maksudul",
-                icon: facebook
+                icon: "icon-fb"
             },
             {
                 pid: 2,
                 socialLink: "https://instagram.com/maksudul",
-                icon: facebook
+                icon: "icon-instagram"
             },
             {
                 pid: 3,
                 socialLink: "https://linkedin.com/maksudul",
-                icon: facebook
+                icon: "icon-linkedin"
             },
             {
                 pid: 4,
                 socialLink: "https://twitter.com/maksudul",
-                icon: facebook
+                icon: "icon-twitter"
             }
         ],
         followers: 12,
@@ -53,22 +48,22 @@ export const profiles = [
             {
                 pid: 1,
                 socialLink: "https://facebook.com/refez",
-                icon: facebook
+                icon: "icon-fb"
             },
             {
                 pid: 2,
                 socialLink: "https://instagram.com/refez",
-                icon: facebook
+                icon: "icon-instagram"
             },
             {
                 pid: 3,
                 socialLink: "https://linkedin.com/refez",
-                icon: facebook
+                icon: "icon-linkedin"
             },
             {
                 pid: 4,
                 socialLink: "https://twitter.com/refez",
-                icon: facebook
+                icon: "icon-twitter"
             }
         ],
         followers: 12,
@@ -85,22 +80,22 @@ export const profiles = [
             {
                 pid: 1,
                 socialLink: "https://facebook.com/john-deo",
-                icon: facebook
+                icon: "icon-fb"
             },
             {
                 pid: 2,
                 socialLink: "https://instagram.com/john-deo",
-                icon: facebook
+                icon: "icon-instagram"
             },
             {
                 pid: 3,
                 socialLink: "https://linkedin.com/john-deo",
-                icon: facebook
+                icon: "icon-linkedin"
             },
             {
                 pid: 4,
                 socialLink: "https://twitter.com/john-deo",
-                icon: facebook
+                icon: "icon-twitter"
             }
         ],
         followers: 12,
@@ -117,22 +112,22 @@ export const profiles = [
             {
                 pid: 1,
                 socialLink: "https://facebook.com/neymar-jr",
-                icon: facebook
+                icon: "icon-fb"
             },
             {
                 pid: 2,
                 socialLink: "https://instagram.com/neymar-jr",
-                icon: facebook
+                icon: "icon-instagram"
             },
             {
                 pid: 3,
                 socialLink: "https://linkedin.com/neymar-jr",
-                icon: facebook
+                icon: "icon-linkedin"
             },
             {
                 pid: 4,
                 socialLink: "https://twitter.com/neymar-jr",
-                icon: facebook
+                icon: "icon-twitter"
             }
         ],
         followers: 12,
@@ -149,22 +144,22 @@ export const profiles = [
             {
                 pid: 1,
                 socialLink: "https://facebook.com/jonathan-smith",
-                icon: facebook
+                icon: "icon-fb"
             },
             {
                 pid: 2,
                 socialLink: "https://instagram.com/jonathan-smith",
-                icon: facebook
+                icon: "icon-instagram"
             },
             {
                 pid: 3,
                 socialLink: "https://linkedin.com/jonathan-smith",
-                icon: facebook
+                icon: "icon-linkedin"
             },
             {
                 pid: 4,
                 socialLink: "https://twitter.com/jonathan-smith",
-                icon: facebook
+                icon: "icon-twitter"
             }
         ],
         followers: 12,
@@ -181,22 +176,22 @@ export const profiles = [
             {
                 pid: 1,
                 socialLink: "https://facebook.com/john-sina",
-                icon: facebook
+                icon: "icon-fb"
             },
             {
                 pid: 2,
                 socialLink: "https://instagram.com/john-sina",
-                icon: facebook
+                icon: "icon-instagram"
             },
             {
                 pid: 3,
                 socialLink: "https://linkedin.com/john-sina",
-                icon: facebook
+                icon: "icon-linkedin"
             },
             {
                 pid: 4,
                 socialLink: "https://twitter.com/john-sina",
-                icon: facebook
+                icon: "icon-twitter"
             }
         ],
         followers: 12,

@@ -3,7 +3,7 @@ import {Button, Col, Container, Nav, Row} from 'react-bootstrap'
 
 import Form from '../components/common/Form'
 import SearchBox from '../components/common/SearchBox'
-import SocialItem from "../components/common/SocialItem";
+import SocialItem from '../components/common/SocialItem'
 import { DashboardState } from '../models/Dashboard'
 import { profiles } from "../fakeData";
 
@@ -26,6 +26,7 @@ class Dashboard extends Form {
         // const profiles = await fetchProfiles()
         // console.log(profiles)
         this.setState({ profiles })
+        console.log(profiles)
     }
 
     doSubmit = async () => {
@@ -77,35 +78,38 @@ class Dashboard extends Form {
 
                                         return (
                                             <Col md="4" key={id}>
-                                                <div className="profile-item">
+                                                <div className="profile-item text-center my-3">
                                                     <div className="profile-item-wrap">
                                                         <div className="profile-item-img-wrap">
-                                                            <img src={profileImage} alt={name}/>
+                                                            <img className="img-fluid rounded-pill" src={profileImage} alt={name}/>
                                                         </div>
                                                     </div>
                                                     <div className="profile-item-info">
-                                                        <h3>{name}</h3>
+                                                        <h3 className="mb-2">{name}</h3>
 
-                                                        <div className="location">
-                                                            <i className="icon-fb"></i>
-                                                            <div className="location-name">
+                                                        <div className="location d-flex align-items-center justify-content-center mb-2">
+                                                            <i className="icon-location"></i>
+                                                            <small className="location-name ms-2">
                                                                 {location}
-                                                            </div>
+                                                            </small>
                                                         </div>
 
-                                                        <div className="joining-date-wrapper">
+                                                        <div className="joining-date-wrapper d-flex align-items-center justify-content-center mb-4">
                                                             <i className="icon-clock"></i>
-                                                            <div className="joining-date">
+                                                            <small className="joining-date ms-2">
                                                                 {joiningDate}
-                                                            </div>
+                                                            </small>
                                                         </div>
 
-                                                        <Nav className="justify-content-center justify-content-md-start">
-                                                            <SocialItem href="https://facebook.com/" iconName="icon-fb"/>
-                                                            <SocialItem href="https://instagram.com/" iconName="icon-instagram"/>
-                                                            <SocialItem href="https://linkedin.com/" iconName="icon-linkedin"/>
-                                                            <SocialItem href="https://twitter.com/" iconName="icon-twitter"/>
+                                                        <Nav className="justify-content-center mt-4">
+                                                            {socials.map((social) => {
+                                                                return (
+                                                                    <SocialItem key={social.pid} href={social.socialLink} iconName={social.icon}/>
+                                                                )
+                                                            })}
                                                         </Nav>
+
+
 
                                                     </div>
                                                 </div>
