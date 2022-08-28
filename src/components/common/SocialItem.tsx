@@ -2,14 +2,16 @@ import React from 'react'
 import {Nav} from 'react-bootstrap'
 
 interface SocialItemProps {
-    to: string,
-    children: React.ReactNode
+    href: string,
+    iconName: string,
 }
 
-const SocialItem: React.FC<SocialItemProps> = ({ to, children }) => {
+const SocialItem: React.FC<SocialItemProps> = ({ href, iconName }) => {
     return ( 
         <Nav.Item as="li">
-            <Nav.Link href={to}>{children}</Nav.Link>
+            <Nav.Link href={href}>
+                <i className={iconName}></i>
+            </Nav.Link>
         </Nav.Item>
      );
 }
