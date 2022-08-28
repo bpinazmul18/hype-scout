@@ -6,6 +6,7 @@ import SearchBox from '../components/common/SearchBox'
 import SocialItem from '../components/common/SocialItem'
 import { DashboardState } from '../models/Dashboard'
 import { profiles } from "../fakeData";
+import ProfileItem from '../components/ProfileItem'
 
 class Dashboard extends Form {
     state: DashboardState = {
@@ -24,7 +25,6 @@ class Dashboard extends Form {
 
     async componentDidMount () {
         this.setState({ profiles })
-        console.log(profiles)
     }
 
     doSubmit = async () => {
@@ -72,75 +72,8 @@ class Dashboard extends Form {
                             <Row>
                                 {
                                     this.state.profiles.map(_profile => {
-                                        const {id, profileImage, name, location, joiningDate, socials, followers, categoryName, gender } = _profile
-
                                         return (
-                                            <Col md="6" lg="4" key={id}>
-                                                <div className="profile-item text-center my-3">
-                                                    <div className="profile-item-wrap">
-                                                        <div className="profile-item-img-wrap">
-                                                            <img className="img-fluid rounded-pill" src={profileImage} alt={name}/>
-                                                        </div>
-                                                    </div>
-                                                    <div className="profile-item-info">
-                                                        <h3 className="mb-2">{name}</h3>
-
-                                                        <div className="location d-flex align-items-center justify-content-center mb-2">
-                                                            <i className="icon-location"></i>
-                                                            <small className="location-name ms-2">
-                                                                {location}
-                                                            </small>
-                                                        </div>
-
-                                                        <div className="joining-date-wrapper d-flex align-items-center justify-content-center mb-4">
-                                                            <i className="icon-clock"></i>
-                                                            <small className="joining-date ms-2">
-                                                                {joiningDate}
-                                                            </small>
-                                                        </div>
-
-                                                        <Nav className="justify-content-center my-4">
-                                                            {socials.map((social) => {
-                                                                return (
-                                                                    <SocialItem key={social.pid} href={social.socialLink} iconName={social.icon}/>
-                                                                )
-                                                            })}
-                                                        </Nav>
-
-                                                        <div className="profile-footer d-flex align-items-center justify-content-center pt-2">
-                                                            <div className="widget p-2">
-                                                                <div className="widget-value">
-                                                                    12k
-                                                                </div>
-
-                                                                <div className="widget-title">
-                                                                    Follwers
-                                                                </div>
-                                                            </div>
-
-                                                            <div className="widget p-2">
-                                                                <div className="widget-value">
-                                                                    Fashion
-                                                                </div>
-
-                                                                <div className="widget-title">
-                                                                    Category
-                                                                </div>
-                                                            </div>
-
-                                                            <div className="widget p-2">
-                                                                <div className="widget-value">
-                                                                    Male
-                                                                </div>
-
-                                                                <div className="widget-title">
-                                                                    Gender
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </Col>
+                                            <ProfileItem key={_profile.id} {..._profile} />
                                         )
                                     })
                                 }
