@@ -1,10 +1,10 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gpby6k');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gpby6k#iefix') format('embedded-opentype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gpby6k') format('truetype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gpby6k') format('woff'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gpby6k##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?lgb08u');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?lgb08u#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?lgb08u') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?lgb08u') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?lgb08u##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,63 +28,67 @@
 .icon-clock {
   &:before {
     content: $icon-clock;
+    color: $tertiary-clr;
   }
 }
 .icon-fb {
   &:before {
     content: $icon-fb;
-    color: #637381;
+    color: $tertiary-clr;
   }
 }
 .icon-filter {
   &:before {
     content: $icon-filter;
+    color: #fff;
   }
 }
 .icon-instagram {
   &:before {
     content: $icon-instagram;
-    color: #637381;
+    color: $tertiary-clr;
   }
 }
 .icon-linkedin {
   &:before {
     content: $icon-linkedin;
-    color: #637381;
+    color: $tertiary-clr;
   }
 }
 .icon-location {
   &:before {
     content: $icon-location;
+    color: $tertiary-clr;
   }
 }
 .icon-monitor {
   &:before {
     content: $icon-monitor;
-    color: #637381;
+    color: $tertiary-clr;
   }
 }
 .icon-moon {
   &:before {
     content: $icon-moon;
-    color: #637381;
+    color: $tertiary-clr;
   }
 }
 .icon-notification {
   &:before {
     content: $icon-notification;
+    color: $tertiary-clr;
   }
 }
 .icon-sun {
   &:before {
     content: $icon-sun;
-    color: #637381;
+    color: $tertiary-clr;
   }
 }
 .icon-twitter {
   &:before {
     content: $icon-twitter;
-    color: #637381;
+    color: $tertiary-clr;
   }
 }
 
