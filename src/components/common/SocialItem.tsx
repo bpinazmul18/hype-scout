@@ -2,8 +2,8 @@ import React from 'react'
 import {Nav} from 'react-bootstrap'
 
 interface SocialItemProps {
-    href: string,
-    iconName: string,
+    href: string, 
+    iconName: any
 }
 
 const SocialItem: React.FC<SocialItemProps> = ({ href, iconName }) => {

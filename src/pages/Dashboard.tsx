@@ -23,8 +23,6 @@ class Dashboard extends Form {
     }
 
     async componentDidMount () {
-        // const profiles = await fetchProfiles()
-        // console.log(profiles)
         this.setState({ profiles })
         console.log(profiles)
     }
@@ -77,7 +75,7 @@ class Dashboard extends Form {
                                         const {id, profileImage, name, location, joiningDate, socials, followers, categoryName, gender } = _profile
 
                                         return (
-                                            <Col md="4" key={id}>
+                                            <Col md="6" lg="4" key={id}>
                                                 <div className="profile-item text-center my-3">
                                                     <div className="profile-item-wrap">
                                                         <div className="profile-item-img-wrap">
@@ -101,7 +99,7 @@ class Dashboard extends Form {
                                                             </small>
                                                         </div>
 
-                                                        <Nav className="justify-content-center mt-4">
+                                                        <Nav className="justify-content-center my-4">
                                                             {socials.map((social) => {
                                                                 return (
                                                                     <SocialItem key={social.pid} href={social.socialLink} iconName={social.icon}/>
@@ -109,8 +107,37 @@ class Dashboard extends Form {
                                                             })}
                                                         </Nav>
 
+                                                        <div className="profile-footer d-flex align-items-center justify-content-center pt-2">
+                                                            <div className="widget p-2">
+                                                                <div className="widget-value">
+                                                                    12k
+                                                                </div>
 
+                                                                <div className="widget-title">
+                                                                    Follwers
+                                                                </div>
+                                                            </div>
 
+                                                            <div className="widget p-2">
+                                                                <div className="widget-value">
+                                                                    Fashion
+                                                                </div>
+
+                                                                <div className="widget-title">
+                                                                    Category
+                                                                </div>
+                                                            </div>
+
+                                                            <div className="widget p-2">
+                                                                <div className="widget-value">
+                                                                    Male
+                                                                </div>
+
+                                                                <div className="widget-title">
+                                                                    Gender
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </Col>
