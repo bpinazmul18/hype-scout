@@ -1,3 +1,4 @@
+import React from 'react'
 import { Col, Nav } from 'react-bootstrap'
 import SocialItem from './common/SocialItem'
 import { ProfileItemProps } from '../models/ProfileItem'
