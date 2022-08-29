@@ -31,5 +31,7 @@ export interface DashboardState {
     data: Data,
     profiles: Profile[],
     errors: string,
-    searchQuery: string
+    searchQuery: string,
+    currentPage: number,
+    profilesPerPage: number
 }

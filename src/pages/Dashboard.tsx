@@ -19,7 +19,9 @@ class Dashboard extends Form {
         },
         profiles: [],
         errors: '',
-        searchQuery: ''
+        searchQuery: '',
+        currentPage: 1,
+        profilesPerPage: 5
     }
 
     async componentDidMount () {
@@ -36,6 +38,13 @@ class Dashboard extends Form {
 
 
     render () {
+
+        // Get current posts
+        const indexOfLastProfile = this.state.currentPage * this.state.profilesPerPage
+        const indexOfFirstProfile = indexOfLastProfile - this.state.profilesPerPage
+        const currentProfiles = this.state.profiles.slice(indexOfFirstProfile, indexOfLastProfile)
+
+
         return (
             <div className="dashboard-page">
                 <section className="search-section mb-5">
@@ -70,7 +79,7 @@ class Dashboard extends Form {
                         <Container>
                             <Row>
                                 {
-                                    this.state.profiles.map(_profile => {
+                                    currentProfiles.map(_profile => {
                                         return (
                                             <ProfileItem key={_profile.id} {..._profile}/>
                                         )
@@ -84,7 +93,7 @@ class Dashboard extends Form {
                 <section className="pagination-section pt-4">
                     <div className="section-inner">
                         <Container>
-                            <MyPagination/>
+                            <MyPagination profilesPerPage={this.state.profilesPerPage} totalProfile={this.state.profiles.length}/>
                         </Container>
                     </div>
                 </section>
