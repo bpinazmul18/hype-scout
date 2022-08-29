@@ -24,6 +24,11 @@
     &:hover, &:active, &:focus {
       background-color: $blue-violet;
       border-color: $blue-violet;
+      //box-shadow: .2rem .2rem 9.5rem .1rem rgba(86,79,177,0.68)
+    }
+
+    &:focus {
+      box-shadow: .2rem .2rem 9.5rem .1rem rgba(86,79,177,0.68)
     }
   }
 

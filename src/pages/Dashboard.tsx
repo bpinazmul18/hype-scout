@@ -81,7 +81,7 @@ class Dashboard extends Form {
                     </div>
                 </section>
 
-                <section className="pagination-section">
+                <section className="pagination-section pt-4">
                     <div className="section-inner">
                         <Container>
                             <MyPagination/>
