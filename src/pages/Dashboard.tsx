@@ -7,6 +7,7 @@ import SocialItem from '../components/common/SocialItem'
 import { DashboardState } from '../models/Dashboard'
 import { profiles } from "../fakeData";
 import ProfileItem from '../components/ProfileItem'
+import MyPagination from "../components/common/Pagination";
 
 class Dashboard extends Form {
     state: DashboardState = {
@@ -78,6 +79,14 @@ class Dashboard extends Form {
                                     })
                                 }
                             </Row>
+                        </Container>
+                    </div>
+                </section>
+
+                <section className="pagination-section">
+                    <div className="section-inner">
+                        <Container>
+                            <MyPagination/>
                         </Container>
                     </div>
                 </section>
