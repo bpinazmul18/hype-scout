@@ -1,9 +1,8 @@
 import React from 'react'
-import {Button, Col, Container, Nav, Row} from 'react-bootstrap'
+import {Button, Container, Row} from 'react-bootstrap'
 
 import Form from '../components/common/Form'
 import SearchBox from '../components/common/SearchBox'
-import SocialItem from '../components/common/SocialItem'
 import { DashboardState } from '../models/Dashboard'
 import { profiles } from "../fakeData";
 import ProfileItem from '../components/ProfileItem'
