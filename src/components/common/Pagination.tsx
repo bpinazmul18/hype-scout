@@ -3,17 +3,16 @@ import Pagination from 'react-bootstrap/Pagination'
 
 interface PaginationProps {
     profilesPerPage: number,
-    totalProfile: number
+    totalProfile: number,
+    paginate: () => void
 }
 
-const MyPagination: React.FC<PaginationProps> = ({ totalProfile, profilesPerPage}) => {
-    console.log(profilesPerPage)
-
+const MyPagination: React.FC<PaginationProps> = ({ totalProfile, profilesPerPage, paginate}) => {
     const pageNumbers: number[] = []
 
-    // for (let i = 1; i <= Math.ceil(totalProfile, profilesPerPage); i++) {
-    //     pageNumbers.push(i)
-    // }
+    for (let i = 1; i <= Math.ceil(totalProfile / profilesPerPage); i++) {
+        pageNumbers.push(i)
+    }
     return (
         <Pagination className="d-flex align-items-center justify-content-between px-5">
                 <div className="pagination-item">
@@ -27,7 +26,7 @@ const MyPagination: React.FC<PaginationProps> = ({ totalProfile, profilesPerPage
                     {
                         pageNumbers.map(number => {
                             return (
-                                <Pagination.Item key={number}>{number}</Pagination.Item>
+                                <Pagination.Item onClick={() => paginate(number)} key={number}>{number}</Pagination.Item>
                             )
                         })
                     }

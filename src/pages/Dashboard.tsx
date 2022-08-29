@@ -36,6 +36,10 @@ class Dashboard extends Form {
         this.setState({ searchQuery: query })
     }
 
+    handlePaginate = (count: number) => {
+        console.log(count)
+    }
+
 
     render () {
 
@@ -93,7 +97,7 @@ class Dashboard extends Form {
                 <section className="pagination-section pt-4">
                     <div className="section-inner">
                         <Container>
-                            <MyPagination profilesPerPage={this.state.profilesPerPage} totalProfile={this.state.profiles.length}/>
+                            <MyPagination profilesPerPage={this.state.profilesPerPage} totalProfile={this.state.profiles.length} paginate={this.handlePaginate}/>
                         </Container>
                     </div>
                 </section>
