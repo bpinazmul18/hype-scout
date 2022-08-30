@@ -1,11 +1,13 @@
 import React from 'react'
 import {Button, Container, Row} from 'react-bootstrap'
+
 import Form from '../components/common/Form'
 import SearchBox from '../components/common/SearchBox'
-import { DashboardState } from '../models/Dashboard'
-import { profiles } from '../fakeData'
 import ProfileItem from '../components/ProfileItem'
 import MyPagination from '../components/common/Pagination'
+
+import { DashboardState } from '../models/Dashboard'
+import { profiles } from '../fakeData'
 
 class Dashboard extends Form {
     state: DashboardState = {

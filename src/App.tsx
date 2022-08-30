@@ -1,11 +1,14 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom'
 
-import Dashboard from './pages/Dashboard';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import Dashboard from './pages/Dashboard'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import Campaign from './pages/Campaign'
+import HypeSocial from './pages/HypeSocial'
+import Insights from './pages/Insights'
 
-import './App.scss';
+import './App.scss'
 
 const App: React.FC = () => {
   return (
@@ -14,9 +17,9 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" replace/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/campaign" element={<h1>Campaign</h1>}/>
-        <Route path="/hypesocial" element={<h1>Hypesocial</h1>}/>
-        <Route path="/insights" element={<h1>Insights</h1>}/>
+        <Route path="/campaign" element={<Campaign/>}/>
+        <Route path="/hypesocial" element={<HypeSocial/>}/>
+        <Route path="/insights" element={<Insights/>}/>
 
         <Route path="not-found" element={<p>NOT FOUND</p>}/>
         <Route path="*" element={<Navigate to="/not-found" replace/>}/>
@@ -26,4 +29,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default App

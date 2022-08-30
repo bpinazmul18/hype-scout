@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import NavbarDropdown from './common/NavbarDropdown';
+
+import NavbarDropdown from './common/NavbarDropdown'
 import NavItem from './common/NavItem';
 
 import logo from '../assets/img/hype-scout.png'

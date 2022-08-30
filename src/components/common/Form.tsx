@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Input from "./Input";
+import Input from './Input'
 
 class Form extends Component {
     state = {
@@ -16,7 +16,7 @@ class Form extends Component {
     }
 
     renderedInput (label: string, type: string, name: string) {
-        const {data, errors} = this.state
+        // const {data, errors} = this.state
         return <Input label={label} type={type} name={name} value={'nazu'} onChange={this.handleChange} error={'hi'}/>
     }
 }
