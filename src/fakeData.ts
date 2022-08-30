@@ -198,5 +198,197 @@ export const profiles: ProfileItemProps[] = [
         followers: 12,
         categoryName: "Fashion",
         gender: "male"
+    },
+    {
+        id: 7,
+        profileImage: profile1,
+        name: "Maksudul Haque",
+        location: "Dhaka Bangladesh",
+        joiningDate: "Joined On: July 26th, 2022",
+        socials: [
+            {
+                pid: 1,
+                socialLink: "https://facebook.com/haque",
+                icon: "icon-fb"
+            },
+            {
+                pid: 2,
+                socialLink: "https://instagram.com/haque",
+                icon: "icon-instagram"
+            },
+            {
+                pid: 3,
+                socialLink: "https://linkedin.com/haque",
+                icon: "icon-linkedin"
+            },
+            {
+                pid: 4,
+                socialLink: "https://twitter.com/haque",
+                icon: "icon-twitter"
+            }
+        ],
+        followers: 12,
+        categoryName: "Fashion",
+        gender: "male"
+    },
+    {
+        id: 8,
+        profileImage: profile2,
+        name: "Refez Haque",
+        location: "Dhaka Bangladesh",
+        joiningDate: "Joined On: July 26th, 2022",
+        socials: [
+            {
+                pid: 1,
+                socialLink: "https://facebook.com/refez",
+                icon: "icon-fb"
+            },
+            {
+                pid: 2,
+                socialLink: "https://instagram.com/refez",
+                icon: "icon-instagram"
+            },
+            {
+                pid: 3,
+                socialLink: "https://linkedin.com/refez",
+                icon: "icon-linkedin"
+            },
+            {
+                pid: 4,
+                socialLink: "https://twitter.com/refez",
+                icon: "icon-twitter"
+            }
+        ],
+        followers: 12,
+        categoryName: "Fashion",
+        gender: "male"
+    },
+    {
+        id: 9,
+        profileImage: profile3,
+        name: "John Doe",
+        location: "Dhaka Bangladesh",
+        joiningDate: "Joined On: July 26th, 2022",
+        socials: [
+            {
+                pid: 1,
+                socialLink: "https://facebook.com/john-deo",
+                icon: "icon-fb"
+            },
+            {
+                pid: 2,
+                socialLink: "https://instagram.com/john-deo",
+                icon: "icon-instagram"
+            },
+            {
+                pid: 3,
+                socialLink: "https://linkedin.com/john-deo",
+                icon: "icon-linkedin"
+            },
+            {
+                pid: 4,
+                socialLink: "https://twitter.com/john-deo",
+                icon: "icon-twitter"
+            }
+        ],
+        followers: 12,
+        categoryName: "Fashion",
+        gender: "male"
+    },
+    {
+        id: 10,
+        profileImage: profile4,
+        name: "Neymar Jr.",
+        location: "Dhaka Bangladesh",
+        joiningDate: "Joined On: July 26th, 2022",
+        socials: [
+            {
+                pid: 1,
+                socialLink: "https://facebook.com/neymar-jr",
+                icon: "icon-fb"
+            },
+            {
+                pid: 2,
+                socialLink: "https://instagram.com/neymar-jr",
+                icon: "icon-instagram"
+            },
+            {
+                pid: 3,
+                socialLink: "https://linkedin.com/neymar-jr",
+                icon: "icon-linkedin"
+            },
+            {
+                pid: 4,
+                socialLink: "https://twitter.com/neymar-jr",
+                icon: "icon-twitter"
+            }
+        ],
+        followers: 12,
+        categoryName: "Fashion",
+        gender: "male"
+    },
+    {
+        id: 11,
+        profileImage: profile5,
+        name: "Jonathan Smith",
+        location: "Dhaka Bangladesh",
+        joiningDate: "Joined On: July 26th, 2022",
+        socials: [
+            {
+                pid: 1,
+                socialLink: "https://facebook.com/jonathan-smith",
+                icon: "icon-fb"
+            },
+            {
+                pid: 2,
+                socialLink: "https://instagram.com/jonathan-smith",
+                icon: "icon-instagram"
+            },
+            {
+                pid: 3,
+                socialLink: "https://linkedin.com/jonathan-smith",
+                icon: "icon-linkedin"
+            },
+            {
+                pid: 4,
+                socialLink: "https://twitter.com/jonathan-smith",
+                icon: "icon-twitter"
+            }
+        ],
+        followers: 12,
+        categoryName: "Fashion",
+        gender: "male"
+    },
+    {
+        id: 12,
+        profileImage: profile6,
+        name: "John Sina",
+        location: "Dhaka Bangladesh",
+        joiningDate: "Joined On: July 26th, 2022",
+        socials: [
+            {
+                pid: 1,
+                socialLink: "https://facebook.com/john-sina",
+                icon: "icon-fb"
+            },
+            {
+                pid: 2,
+                socialLink: "https://instagram.com/john-sina",
+                icon: "icon-instagram"
+            },
+            {
+                pid: 3,
+                socialLink: "https://linkedin.com/john-sina",
+                icon: "icon-linkedin"
+            },
+            {
+                pid: 4,
+                socialLink: "https://twitter.com/john-sina",
+                icon: "icon-twitter"
+            }
+        ],
+        followers: 12,
+        categoryName: "Fashion",
+        gender: "male"
     }
 ]

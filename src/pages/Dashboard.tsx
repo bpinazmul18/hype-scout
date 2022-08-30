@@ -21,7 +21,7 @@ class Dashboard extends Form {
         errors: '',
         searchQuery: '',
         currentPage: 1,
-        profilesPerPage: 2
+        profilesPerPage: 6
     }
 
     async componentDidMount () {
