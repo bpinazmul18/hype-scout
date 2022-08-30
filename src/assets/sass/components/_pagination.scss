@@ -8,6 +8,12 @@
       align-items: center;
       justify-content: center;
 
+      &.disabled {
+        &:hover {
+          cursor: no-drop;
+        }
+      }
+
       &.active {
         background: $secondary-clr;
         //border-radius: 50%;
@@ -16,6 +22,8 @@
           //background: $secondary-clr;
         }
       }
+
+
 
       .page-link {
         background-color: transparent;
