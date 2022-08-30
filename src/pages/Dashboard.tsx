@@ -82,20 +82,12 @@ class Dashboard extends Form {
                         <Container>
                             <Row>
                                 {
-                                    currentProfiles.map((_profile) => {
+                                    currentProfiles.map(_profile => {
                                         return (
-                                            <p key={_profile.id}>hi{_profile.followers}</p>
-                                            // <ProfileItem key={_profile.id} {..._profile}/>
+                                            <ProfileItem key={_profile.id} {..._profile} followers={parseInt(_profile.followers)}/>
                                         )
                                     })
                                 }
-                                {/* {
-                                    currentProfiles.map(_profile => {
-                                        return (
-                                            <ProfileItem key={_profile.id} {..._profile}/>
-                                        )
-                                    })
-                                } */}
                             </Row>
                         </Container>
                     </div>
