@@ -4,7 +4,7 @@ import Pagination from 'react-bootstrap/Pagination'
 interface PaginationProps {
     profilesPerPage: number,
     totalProfile: number,
-    paginate: () => void
+    paginate: () => number
 }
 
 const MyPagination: React.FC<PaginationProps> = ({ totalProfile, profilesPerPage, paginate}) => {
@@ -26,7 +26,7 @@ const MyPagination: React.FC<PaginationProps> = ({ totalProfile, profilesPerPage
                     {
                         pageNumbers.map(number => {
                             return (
-                                <Pagination.Item onClick={() => paginate(number)} key={number}>{number}</Pagination.Item>
+                                <Pagination.Item onClick={() => paginate()} key={number}>{number}</Pagination.Item>
                             )
                         })
                     }

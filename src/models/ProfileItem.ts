@@ -7,7 +7,27 @@ export interface ProfileItemProps {
     joiningDate: string,
     socials: SocialsProps[],
     profileImage: string,
-    followers: string,
+    followers: number,
     categoryName: string,
     gender: string
 }
+
+// const user: ProfileItemProps[] = [
+//     {
+//         id: 1,
+//         name: 'st',
+//         location: 'ld',
+//         joiningDate: 'dfjdkj',
+//         socials: [
+//             { 
+//                 pid: 1,
+//                 socialLink: 'kjkj',
+//                 icon: 'dkfjk'
+//             }
+//         ],
+//         profileImage: 'dkfjkd',
+//         followers: 1,
+//         categoryName: 'dkfj',
+//         gender: 'dfjdk'
+//     }
+// ]

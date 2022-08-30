@@ -4,8 +4,9 @@ import profile3 from './assets/img/profiles/profile-3.png'
 import profile4 from './assets/img/profiles/profile-4.png'
 import profile5 from './assets/img/profiles/profile-5.png'
 import profile6 from './assets/img/profiles/profile-6.png'
+import { ProfileItemProps } from './models/ProfileItem';
 
-export const profiles = [
+export const profiles: ProfileItemProps[] = [
     {
         id: 1,
         profileImage: profile1,

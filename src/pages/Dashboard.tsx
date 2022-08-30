@@ -48,7 +48,6 @@ class Dashboard extends Form {
         const indexOfFirstProfile = indexOfLastProfile - this.state.profilesPerPage
         const currentProfiles = this.state.profiles.slice(indexOfFirstProfile, indexOfLastProfile)
 
-
         return (
             <div className="dashboard-page">
                 <section className="search-section mb-5">
@@ -83,12 +82,20 @@ class Dashboard extends Form {
                         <Container>
                             <Row>
                                 {
+                                    currentProfiles.map((_profile) => {
+                                        return (
+                                            <p key={_profile.id}>hi{_profile.followers}</p>
+                                            // <ProfileItem key={_profile.id} {..._profile}/>
+                                        )
+                                    })
+                                }
+                                {/* {
                                     currentProfiles.map(_profile => {
                                         return (
                                             <ProfileItem key={_profile.id} {..._profile}/>
                                         )
                                     })
-                                }
+                                } */}
                             </Row>
                         </Container>
                     </div>
@@ -97,7 +104,7 @@ class Dashboard extends Form {
                 <section className="pagination-section pt-4">
                     <div className="section-inner">
                         <Container>
-                            <MyPagination profilesPerPage={this.state.profilesPerPage} totalProfile={this.state.profiles.length} paginate={this.handlePaginate}/>
+                            {/* <MyPagination profilesPerPage={this.state.profilesPerPage} totalProfile={this.state.profiles.length} paginate={this.handlePaginate}/> */}
                         </Container>
                     </div>
                 </section>
