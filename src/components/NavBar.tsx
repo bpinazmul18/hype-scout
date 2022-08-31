@@ -9,6 +9,11 @@ import logo from '../assets/img/hype-scout.png'
 
 
 const NavBar: React.FC = () => {
+    const handleClick = (name: string) => {
+        const body = document.getElementsByTagName("BODY")[0]
+        body.className = name
+    }
+
     return (
         <Navbar className="mb-5" collapseOnSelect expand="lg" variant="dark">
             <Container>
@@ -16,7 +21,7 @@ const NavBar: React.FC = () => {
                     <img className="img-fluid" src={logo} alt="HypeScout"/>
                 </Navbar.Brand>
 
-                <NavbarDropdown/>
+                <NavbarDropdown onClick={handleClick}/>
 
                 <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
 
