@@ -51,18 +51,28 @@ class Dashboard extends Form {
     }
 
     getPagedData = () => {
-        // Get current posts
-        const indexOfLastProfile = this.state.currentPage * this.state.profilesPerPage
-        const indexOfFirstProfile = indexOfLastProfile - this.state.profilesPerPage
-        const currentProfiles = this.state.profiles.slice(indexOfFirstProfile, indexOfLastProfile)
+        const { profilesPerPage, currentPage, profiles, searchQuery} = this.state
+        let filtered = profiles
 
-        return { totalProfile: currentProfiles}
+        // Searching
+        if (searchQuery)
+            filtered = profiles.filter(m => m.name.toLowerCase().startsWith(searchQuery.toLowerCase()))
+
+        // pagination
+        const indexOfLastProfile = currentPage * profilesPerPage
+        const indexOfFirstProfile = indexOfLastProfile - profilesPerPage
+        const _profile = filtered.slice(indexOfFirstProfile, indexOfLastProfile)
+        // console.log(filtered)
+
+        return { totalCount: filtered.length, data: _profile}
     }
 
 
     render () {
-        const {profiles, searchQuery, profilesPerPage, currentPage} = this.state
-        const { totalProfile } = this.getPagedData()
+        const { searchQuery, profilesPerPage, currentPage } = this.state
+        const { data, totalCount } = this.getPagedData()
+
+        console.log(data)
 
         return (
             <div className="dashboard-page">
@@ -71,7 +81,7 @@ class Dashboard extends Form {
                         <Container>
                             <div className="search-panel d-flex align-items-center flex-column flex-md-row">
                                 <div className="profile-count align-self-start align-self-md-center py-3 py-md-0 pe-0 pe-md-5">
-                                    Profile ({profiles.length})
+                                    Profile ({totalCount})
                                 </div>
 
                                 <div className="profile-search flex-grow-1 py-3 py-md-0 px-0 px-md-3">
@@ -98,7 +108,7 @@ class Dashboard extends Form {
                         <Container>
                             <Row>
                                 {
-                                    totalProfile.map((profile) => {
+                                    data.map((profile) => {
                                         return (
                                             <ProfileItem key={profile.id} {...profile} followers={parseInt(profile.followers)}/>
                                         )
@@ -112,7 +122,7 @@ class Dashboard extends Form {
                 <section className="pagination-section pt-4">
                     <div className="section-inner">
                         <Container>
-                             <MyPagination currentPage={currentPage} profilesPerPage={profilesPerPage} totalProfile={profiles.length} paginate={this.handlePaginate} onPrev={this.handlePrev} onNext={this.handleNext}/>
+                             <MyPagination currentPage={currentPage} profilesPerPage={profilesPerPage} totalProfile={totalCount} paginate={this.handlePaginate} onPrev={this.handlePrev} onNext={this.handleNext}/>
                         </Container>
                     </div>
                 </section>
