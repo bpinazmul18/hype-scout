@@ -37,7 +37,7 @@
                                     font-size: 1.3rem;
                                     font-weight: 400;
                                     line-height: 1.6rem;
-                                    letter-spacing: 0rem;
+                                    letter-spacing: 0;
                                     color: $tertiary-clr;
                                     margin-right: 1rem;
                                     
@@ -59,8 +59,6 @@
                 }
 
                 .dropdown-menu {
-                    
-
                     &[data-bs-popper] {
                         position: absolute;
                         width: 17.4rem;
@@ -86,9 +84,9 @@
                         border-radius: .4rem;
                         transition: all 0.3s ease;
 
-
                         &:hover {
                             background-color: $primary-clr;
+                            cursor: pointer;
 
                             svg {
                                 fill: $chetwode-blue;
@@ -101,7 +99,7 @@
 
                         .dropdown-item-text {
                             color: $tertiary-clr;
-                            padding: 0rem;
+                            padding: 0;
                             margin-left: 1rem;
                         }
                     }
