@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Container, Row} from 'react-bootstrap'
+import { Button, Container, Row } from 'react-bootstrap'
 
 import Form from '../components/common/Form'
 import SearchBox from '../components/common/SearchBox'
@@ -62,7 +62,6 @@ class Dashboard extends Form {
         const indexOfLastProfile = currentPage * profilesPerPage
         const indexOfFirstProfile = indexOfLastProfile - profilesPerPage
         const _profile = filtered.slice(indexOfFirstProfile, indexOfLastProfile)
-        // console.log(filtered)
 
         return { totalCount: filtered.length, data: _profile}
     }
@@ -71,8 +70,6 @@ class Dashboard extends Form {
     render () {
         const { searchQuery, profilesPerPage, currentPage } = this.state
         const { data, totalCount } = this.getPagedData()
-
-        console.log(data)
 
         return (
             <div className="dashboard-page">
